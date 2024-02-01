@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%; 
+    display: flex;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+}
+.left-container, .right-container{
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background: #262525 ;
+    width: 70%;
+}
+.right-container{
+    background: linear-gradient(45deg,#3877FF, #262525 85%) ;
+    width: 30% ;
+}
+.icons .fa-brands, .fa-solid{
+    color:#bbb;
+    font-size: 2rem;
+
+    
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+
+}
+.content{
+    color: white;
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    
+}
+.content .intro span{
+    color:#5db9ee;
+}
+.content h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 1.2rem;
+    color: white;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.button{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: inline-block;
+    padding: 12px;
+    background: #5db9ee;
+    border-radius: 5px;
+    color: #262525;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all.45s ease;
+    text-decoration: none;
+    
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url("profile.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .65rem solid #fff;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #3877FF, inset 0 0 2rem #3877FF, 0 0 4rem #3877FF,
+    inset 0 0 4rem #3877FF;
+}
+.about h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
